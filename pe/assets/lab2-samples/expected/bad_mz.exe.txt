@@ -1,0 +1,4 @@
+File: bad_mz.exe (111616 bytes)
+
+
+error: not a PE file: missing "MZ" signature (found 0x4D5A)

@@ -1,0 +1,7 @@
+File: lfanew_out_of_bounds.exe (111616 bytes)
+
+DOS header
+  e_magic               0x5A4D ("MZ")
+  e_lfanew              0x7FFFFFF0
+
+error: read of 4 byte(s) at offset 0x7FFFFFF0 is outside the file (file size is 0x0001B400)

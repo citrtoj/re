@@ -1,0 +1,60 @@
+File: console64.exe (111616 bytes)
+
+DOS header
+  e_magic               0x5A4D ("MZ")
+  e_lfanew              0x00000100
+
+PE signature "PE\0\0" found at 0x00000100
+
+COFF file header
+  Machine               0x8664 (x64)
+  NumberOfSections      6
+  TimeDateStamp         0x6AD21560 (2026-10-16 12:15:28 UTC)
+  SizeOfOptionalHeader  0x00F0
+  Characteristics       0x0022 (EXECUTABLE_IMAGE | LARGE_ADDRESS_AWARE)
+
+Optional header
+  Magic                 0x020B (PE32+)
+  AddressOfEntryPoint   0x00001280
+  ImageBase             0x0000000140000000
+  SectionAlignment      0x00001000
+  FileAlignment         0x00000200
+  SizeOfImage           0x00020000
+  SizeOfHeaders         0x00000400
+  Subsystem             3 (Windows console)
+  DllCharacteristics    0x8160 (HIGH_ENTROPY_VA | DYNAMIC_BASE | NX_COMPAT | TERMINAL_SERVER_AWARE)
+  NumberOfRvaAndSizes   16
+
+Data directories
+  #   Name          RVA         Size
+  0   Export        0x00000000  0x00000000
+  1   Import        0x000191DC  0x00000028
+  2   Resource      0x00000000  0x00000000
+  3   Exception     0x0001C000  0x00001014
+  4   Security      0x00000000  0x00000000
+  5   BaseReloc     0x0001F000  0x00000664
+  6   Debug         0x00017A80  0x00000054
+  7   Architecture  0x00000000  0x00000000
+  8   GlobalPtr     0x00000000  0x00000000
+  9   TLS           0x00000000  0x00000000
+  10  LoadConfig    0x00017940  0x00000140
+  11  BoundImport   0x00000000  0x00000000
+  12  IAT           0x00010000  0x00000268
+  13  DelayImport   0x00000000  0x00000000
+  14  CLR           0x00000000  0x00000000
+  15  Reserved      0x00000000  0x00000000
+
+Sections
+  #   Name      VirtAddr    VirtSize    RawPtr      RawSize     Flags       Perm
+  0   .text     0x00001000  0x0000EAF0  0x00000400  0x0000EC00  0x60000020  R-X
+  1   .rdata    0x00010000  0x00009A02  0x0000F000  0x00009C00  0x40000040  R--
+  2   .data     0x0001A000  0x00001BC8  0x00018C00  0x00000C00  0xC0000040  RW-
+  3   .pdata    0x0001C000  0x00001014  0x00019800  0x00001200  0x40000040  R--
+  4   .fptable  0x0001E000  0x00000100  0x0001AA00  0x00000200  0xC0000040  RW-
+  5   .reloc    0x0001F000  0x00000664  0x0001AC00  0x00000800  0x42000040  R--
+
+Entry point
+  RVA                   0x00001280
+  VA                    0x0000000140001280
+  Section               .text
+  File offset           0x00000680

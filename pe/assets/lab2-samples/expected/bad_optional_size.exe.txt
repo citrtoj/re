@@ -1,0 +1,16 @@
+File: bad_optional_size.exe (111616 bytes)
+
+DOS header
+  e_magic               0x5A4D ("MZ")
+  e_lfanew              0x00000100
+
+PE signature "PE\0\0" found at 0x00000100
+
+COFF file header
+  Machine               0x8664 (x64)
+  NumberOfSections      6
+  TimeDateStamp         0x6AD21560 (2026-10-16 12:15:28 UTC)
+  SizeOfOptionalHeader  0x0010
+  Characteristics       0x0022 (EXECUTABLE_IMAGE | LARGE_ADDRESS_AWARE)
+
+error: SizeOfOptionalHeader (0x0010) is too small, the optional header needs 0x00F0 bytes

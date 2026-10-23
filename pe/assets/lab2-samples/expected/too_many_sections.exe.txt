@@ -1,0 +1,47 @@
+File: too_many_sections.exe (111616 bytes)
+
+DOS header
+  e_magic               0x5A4D ("MZ")
+  e_lfanew              0x00000100
+
+PE signature "PE\0\0" found at 0x00000100
+
+COFF file header
+  Machine               0x8664 (x64)
+  NumberOfSections      65535
+  TimeDateStamp         0x6AD21560 (2026-10-16 12:15:28 UTC)
+  SizeOfOptionalHeader  0x00F0
+  Characteristics       0x0022 (EXECUTABLE_IMAGE | LARGE_ADDRESS_AWARE)
+
+Optional header
+  Magic                 0x020B (PE32+)
+  AddressOfEntryPoint   0x00001280
+  ImageBase             0x0000000140000000
+  SectionAlignment      0x00001000
+  FileAlignment         0x00000200
+  SizeOfImage           0x00020000
+  SizeOfHeaders         0x00000400
+  Subsystem             3 (Windows console)
+  DllCharacteristics    0x8160 (HIGH_ENTROPY_VA | DYNAMIC_BASE | NX_COMPAT | TERMINAL_SERVER_AWARE)
+  NumberOfRvaAndSizes   16
+
+Data directories
+  #   Name          RVA         Size
+  0   Export        0x00000000  0x00000000
+  1   Import        0x000191DC  0x00000028
+  2   Resource      0x00000000  0x00000000
+  3   Exception     0x0001C000  0x00001014
+  4   Security      0x00000000  0x00000000
+  5   BaseReloc     0x0001F000  0x00000664
+  6   Debug         0x00017A80  0x00000054
+  7   Architecture  0x00000000  0x00000000
+  8   GlobalPtr     0x00000000  0x00000000
+  9   TLS           0x00000000  0x00000000
+  10  LoadConfig    0x00017940  0x00000140
+  11  BoundImport   0x00000000  0x00000000
+  12  IAT           0x00010000  0x00000268
+  13  DelayImport   0x00000000  0x00000000
+  14  CLR           0x00000000  0x00000000
+  15  Reserved      0x00000000  0x00000000
+
+error: read of 4 byte(s) at offset 0x0001B400 is outside the file (file size is 0x0001B400)

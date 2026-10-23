@@ -1,0 +1,7 @@
+File: bad_signature.exe (111616 bytes)
+
+DOS header
+  e_magic               0x5A4D ("MZ")
+  e_lfanew              0x00000100
+
+error: invalid PE signature at 0x00000100 (found 0x00005850)
